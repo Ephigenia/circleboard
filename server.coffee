@@ -15,8 +15,6 @@ io.sockets.on 'connection', (socket) ->
     socket.emit 'builds', builds
   getCircleCiStatusApi('foobugs/spritmap-api/tree/master', API_KEY, success)
 
-
-
 parseResponseToBuildArray = (body) ->
   console.info "received #{body.length} bytes"
   commits = JSON.parse(body)
