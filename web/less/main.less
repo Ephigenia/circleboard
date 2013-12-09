@@ -1,0 +1,82 @@
+@bodyBackground: #191919;
+@buildBackgroundColorSuccess: #7eab38;
+@buildBackgroundColorError: #900812;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased; // optimize font rendering
+    background: @bodyBackground;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+#app {
+    margin: 0.25em;
+}
+
+
+div.build {
+    @textColor: #ffffff;
+    width: 220px;
+    height: 200px;
+
+    margin: 0.25em;
+    padding: 0.5em;
+
+    display: table;
+    float: left;
+    position: relative;
+
+    h1, .meta {
+        color: @textColor;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 1em 0em;
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    author, q {
+        display: block;
+        clear: both;
+    }
+    
+    time {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0.3em;
+        font-size: small;
+    }
+
+    &-success {
+        @backgroundColor: @buildBackgroundColorSuccess;
+        background-color: @backgroundColor;
+        time {
+            color: darken(@backgroundColor, 20);
+        }
+    }
+    &-canceled {
+        @backgroundColor: desaturate(@buildBackgroundColorError, 100%);
+        background-color: @backgroundColor;
+        time {
+            color: darken(@backgroundColor, 20);
+        }
+    }
+    &-failed {
+        @backgroundColor: @buildBackgroundColorError;
+        background-color: @backgroundColor;
+        time {
+            color: darken(@backgroundColor, 20);
+        }
+    }
+}

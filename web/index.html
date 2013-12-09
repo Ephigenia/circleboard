@@ -6,40 +6,13 @@
         <title>CircleBoard – The CircleCI Status Board</title>
         <meta name="description" content="CircleBoard – The CircleCI Status Board">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-        <style type="text/css">
-        body {
-            font-family: 'Lato', 'Neue Helvetica', sans-serif;
-        }
-        .branch {
-            font-size: 20px;
-            font-weight: 700;
-        }
-        .author {
-            font-weight: 400;
-            font-size: 14px;
-        }
-        div.build {
-            width: 200px;
-            height: 120px;
-            display: table;
-            float: left;
-            text-align: center;
-        }
-        div.build-success {
-            background: #33d50d;
-        }
-        div.build-canceled {
-            background: #bdafb0;
-        }
-        div.build-failed {
-            background: #c9000d;
-        }
-        </style>
+        <link rel="stylesheet/less" type="text/css" href="less/main.less" />
     </head>
     <body>
         <div id="app"></div>
+
         <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/less.js"></script>
         <script src="http://zeptojs.com/zepto.min.js"></script>
         <script>
         var socket = io.connect('http://localhost');
@@ -48,11 +21,21 @@
             root.html('');
             for (index in builds) {
                 build = builds[index];
+                console.log (build);
                 buildNode = $('<div></div>');
                 buildNode.addClass('build');
                 buildNode.addClass('build-' + build.result);
-                buildNode.append('<h1 class="branch">' + build.branch.name + '<h1>');
-                buildNode.append('<h2 class="author">' + build.commit.author + '<h2>');
+                buildNode.html(
+                    '<h1>Spritmap-API</h1>'
+                    + '<div class="meta">' 
+                        + build.branch.name + ', build #' + build.number + '<br />'
+                        + '<author>' + build.commit.author + '</author>'
+                        + '<q>' + build.commit.subject + '</q>'
+                    + '</div>'
+                    + '<time>' + build.finished + '</time>'
+                );
+                buildNode.append();
+
                 root.append(buildNode);
             }
         });

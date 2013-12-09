@@ -1,17 +1,18 @@
 API_KEY = "2148d071495b9cda230b7a808ed6a79523374dee"
-if process.env.PORT
-  port = process.env.PORT
-else
-  port = 5000
+
+unless webroot
+  webroot = __dirname + '/web/'
 
 https = require('https')
-app = require('express')()
+express = require('express')
+app = express()
 server = require('http').createServer(app)
 io = require('socket.io').listen(server)
 
-server.listen(port)
+server.listen(process.env.PORT || 5000)
+app.use(express.static(webroot))
 app.get '/', (request, response) ->
-  response.sendfile(__dirname + '/index.html')
+  response.sendfile(webroot + "index.html")
 io.sockets.on 'connection', (socket) ->
   success = (response) ->
     builds = parseResponseToBuildArray response
@@ -27,9 +28,12 @@ parseResponseToBuildArray = (body) ->
   for commit in commits
     # transform the circle-ci response to frontend response model
     builds.push
+      number: commit.build_num
       result: commit.outcome
       url: commit.build_url
       project: 'foobugs/spritmap-api'
+      started: commit.start_time
+      finished: commit.stop_time
       commit:
         subject: commit.subject
         hash: commit.vcs_revision
