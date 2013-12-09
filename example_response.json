@@ -1,0 +1,2130 @@
+[
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-12-04T16:11:55.794Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-12-04T08:08:33-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64628,
+                "public_ip_addr": "54.204.239.121"
+            }
+        ],
+        "committer_date": "2013-12-04T08:08:33-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 231507,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-12-04T16:11:56.004Z",
+        "stop_time": "2013-12-04T16:15:47.511Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "fixed unit-tests",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "success",
+        "status": "fixed",
+        "vcs_revision": "ac111ac4440d49d8d24b5e7c4457c326a4328c18",
+        "build_num": 24,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 200649,
+            "status": "failed",
+            "build_num": 22
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-02T05:49:45-08:00",
+                "committer_date": "2013-12-02T05:49:45-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/e0c7e7fd6cc95673ca20364f7e69a28504c8bf00",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "first draft for station address position update command",
+                "commit": "e0c7e7fd6cc95673ca20364f7e69a28504c8bf00",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-02T05:56:42-08:00",
+                "committer_date": "2013-12-02T05:56:42-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/a77d2196b913bf042d8149477185339da31571ab",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds Bazinga\\Geocoding Bundle",
+                "commit": "a77d2196b913bf042d8149477185339da31571ab",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-02T06:34:37-08:00",
+                "committer_date": "2013-12-02T06:34:37-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/81f844302cdcf821dd8e879330b659604ef7a2c9",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds 'merge' method to address entity which can merge it with an other address",
+                "commit": "81f844302cdcf821dd8e879330b659604ef7a2c9",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-02T06:38:14-08:00",
+                "committer_date": "2013-12-02T06:38:14-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/c2ec640fc23fe0cd929414bc231e87e6e84fd41f",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "first working draft of position update command script",
+                "commit": "c2ec640fc23fe0cd929414bc231e87e6e84fd41f",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-04T06:48:26-08:00",
+                "committer_date": "2013-12-04T06:48:26-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/19c0f1e36835df4dde66be0a3724fbb400741616",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed bug with 'str.' to 'Str.' conversion + unit-test",
+                "commit": "19c0f1e36835df4dde66be0a3724fbb400741616",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-04T07:06:11-08:00",
+                "committer_date": "2013-12-04T07:06:11-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/b433a4af4e092a7826fa0d1cd3da98b41aa6a082",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "update address details of stations command finished",
+                "commit": "b433a4af4e092a7826fa0d1cd3da98b41aa6a082",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-04T07:24:55-08:00",
+                "committer_date": "2013-12-04T07:24:55-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/495345aa8b16542a674f74cb958b2ecad03d7b96",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "refactoring on command lat/lng",
+                "commit": "495345aa8b16542a674f74cb958b2ecad03d7b96",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-04T07:28:17-08:00",
+                "committer_date": "2013-12-04T07:28:17-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/e5f0cd869ccec54fff710976befd25a9bbf1def8",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "changed __toString in Position",
+                "commit": "e5f0cd869ccec54fff710976befd25a9bbf1def8",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-04T07:34:39-08:00",
+                "committer_date": "2013-12-04T07:34:39-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/ec7d5bfda8c27e26ded80890713782fe272e59a9",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "csv importer now can have empty company",
+                "commit": "ec7d5bfda8c27e26ded80890713782fe272e59a9",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-04T07:50:55-08:00",
+                "committer_date": "2013-12-04T07:50:55-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/06cdedd717c13d04fa63f3ce2cde25dcf04670c4",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds total import to readme and circle.yml",
+                "commit": "06cdedd717c13d04fa63f3ce2cde25dcf04670c4",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-04T08:08:33-08:00",
+                "committer_date": "2013-12-04T08:08:33-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/ac111ac4440d49d8d24b5e7c4457c326a4328c18",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed unit-tests",
+                "commit": "ac111ac4440d49d8d24b5e7c4457c326a4328c18",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "has_artifacts": true,
+        "failed": null,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/24",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-12-04T16:11:55.884Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-12-02T08:43:18.744Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-12-02T00:43:09-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64703,
+                "public_ip_addr": "54.204.77.38"
+            }
+        ],
+        "committer_date": "2013-12-02T00:43:09-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 200649,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-12-02T08:43:18.919Z",
+        "stop_time": "2013-12-02T08:46:39.568Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "fixed upper/lowercase bug in entiy ORM\\Index annotation",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "f890ec2c3571a60707c3d81482c68d7c145d8513",
+        "build_num": 22,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 82569,
+            "status": "failed",
+            "build_num": 21
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-02T00:43:09-08:00",
+                "committer_date": "2013-12-02T00:43:09-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/f890ec2c3571a60707c3d81482c68d7c145d8513",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed upper/lowercase bug in entiy ORM\\Index annotation",
+                "commit": "f890ec2c3571a60707c3d81482c68d7c145d8513",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "has_artifacts": true,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/22",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-12-02T08:43:18.837Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-12-02T08:31:46.844Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-12-02T00:28:47-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64673,
+                "public_ip_addr": "107.21.71.46"
+            }
+        ],
+        "committer_date": "2013-12-02T00:28:47-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 82569,
+        "why": "retry",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-12-02T08:31:46.979Z",
+        "stop_time": "2013-12-02T08:33:09.548Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "refactors @ApiDoc comments for cleaner api docs",
+        "messages": [],
+        "job_name": null,
+        "retry_of": 20,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "9a15ae2dc840981dc7fbe90f782ea8606dba9ffc",
+        "build_num": 21,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 74946,
+            "status": "failed",
+            "build_num": 20
+        },
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/21",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-12-02T08:31:46.908Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-12-02T08:29:37.516Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-12-02T00:28:47-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64577,
+                "public_ip_addr": "54.211.162.217"
+            }
+        ],
+        "committer_date": "2013-12-02T00:28:47-08:00",
+        "retries": [
+            21
+        ],
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 74946,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-12-02T08:29:37.653Z",
+        "stop_time": "2013-12-02T08:30:52.599Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "refactors @ApiDoc comments for cleaner api docs",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "9a15ae2dc840981dc7fbe90f782ea8606dba9ffc",
+        "build_num": 20,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 71719,
+            "status": "failed",
+            "build_num": 19
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-01T23:56:49-08:00",
+                "committer_date": "2013-12-01T23:56:49-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/6e753864e4546237ff712defe74830ee72f72a7a",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds nelmio api doc bundle for api documentation",
+                "commit": "6e753864e4546237ff712defe74830ee72f72a7a",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-12-02T00:28:47-08:00",
+                "committer_date": "2013-12-02T00:28:47-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/9a15ae2dc840981dc7fbe90f782ea8606dba9ffc",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "refactors @ApiDoc comments for cleaner api docs",
+                "commit": "9a15ae2dc840981dc7fbe90f782ea8606dba9ffc",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/20",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-12-02T08:29:37.577Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T17:30:49.383Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T09:30:43-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64718,
+                "public_ip_addr": "107.22.59.126"
+            }
+        ],
+        "committer_date": "2013-11-29T09:30:43-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 71719,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T17:30:49.519Z",
+        "stop_time": "2013-11-29T17:32:01.238Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "removed distance again from station entity",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "8cc4223a887b3f6bf6d080523b9dbe29059010dc",
+        "build_num": 19,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 98584,
+            "status": "failed",
+            "build_num": 18
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T09:22:48-08:00",
+                "committer_date": "2013-11-29T09:22:48-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/3f0cf909125d0de38eb3b0146b8e9f25906ffd73",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds test for getStations of company",
+                "commit": "3f0cf909125d0de38eb3b0146b8e9f25906ffd73",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T09:30:43-08:00",
+                "committer_date": "2013-11-29T09:30:43-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/8cc4223a887b3f6bf6d080523b9dbe29059010dc",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "removed distance again from station entity",
+                "commit": "8cc4223a887b3f6bf6d080523b9dbe29059010dc",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/19",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T17:30:49.449Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T17:10:33.371Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T09:06:10-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64728,
+                "public_ip_addr": "54.204.173.31"
+            }
+        ],
+        "committer_date": "2013-11-29T09:06:10-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 98584,
+        "why": "retry",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T17:11:49.049Z",
+        "stop_time": "2013-11-29T17:13:27.633Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "fixed tests",
+        "messages": [],
+        "job_name": null,
+        "retry_of": 17,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "4fc108d14838c629fd22a3b544ed91a95f36a591",
+        "build_num": 18,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 78715,
+            "status": "failed",
+            "build_num": 17
+        },
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/18",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T17:11:48.967Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T17:10:29.966Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T09:06:10-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64718,
+                "public_ip_addr": "54.211.168.193"
+            }
+        ],
+        "committer_date": "2013-11-29T09:06:10-08:00",
+        "retries": [
+            18
+        ],
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 78715,
+        "why": "retry",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T17:10:30.113Z",
+        "stop_time": "2013-11-29T17:11:48.828Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "fixed tests",
+        "messages": [],
+        "job_name": null,
+        "retry_of": 16,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "4fc108d14838c629fd22a3b544ed91a95f36a591",
+        "build_num": 17,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 74016,
+            "status": "failed",
+            "build_num": 16
+        },
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/17",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T17:10:30.036Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T17:06:15.810Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T09:06:10-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64744,
+                "public_ip_addr": "54.211.168.193"
+            }
+        ],
+        "committer_date": "2013-11-29T09:06:10-08:00",
+        "retries": [
+            17
+        ],
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 74016,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T17:06:15.968Z",
+        "stop_time": "2013-11-29T17:07:29.984Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "fixed tests",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "4fc108d14838c629fd22a3b544ed91a95f36a591",
+        "build_num": 16,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 73078,
+            "status": "failed",
+            "build_num": 15
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T09:06:10-08:00",
+                "committer_date": "2013-11-29T09:06:10-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/4fc108d14838c629fd22a3b544ed91a95f36a591",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed tests",
+                "commit": "4fc108d14838c629fd22a3b544ed91a95f36a591",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/16",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T17:06:15.887Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T16:43:23.720Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T08:13:15-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64579,
+                "public_ip_addr": "54.237.126.237"
+            }
+        ],
+        "committer_date": "2013-11-29T08:13:15-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 73078,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T16:43:33.289Z",
+        "stop_time": "2013-11-29T16:44:46.367Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "adds indexed columns in address and position entity",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "30135367ad4d747c50f5d2c85af1b90076e7a6e6",
+        "build_num": 15,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 159123,
+            "status": "success",
+            "build_num": 14
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T06:05:54-08:00",
+                "committer_date": "2013-11-29T06:05:54-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/1987949941b5e4c2662af48285491c1ede68a304",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "optimized caching rules",
+                "commit": "1987949941b5e4c2662af48285491c1ede68a304",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T06:33:20-08:00",
+                "committer_date": "2013-11-29T06:33:20-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/b40b1eaf6984daaa9d5eebf11043a37daf0ec012",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds  parameter to company api action",
+                "commit": "b40b1eaf6984daaa9d5eebf11043a37daf0ec012",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T06:54:19-08:00",
+                "committer_date": "2013-11-29T06:54:19-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/c0d64c044684b3f98d1e5199972c8f604a7ab21e",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds city search to station api endpoint",
+                "commit": "c0d64c044684b3f98d1e5199972c8f604a7ab21e",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T07:38:28-08:00",
+                "committer_date": "2013-11-29T07:38:28-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/c73418f953918895255cdbabadb6ccbe43a36e84",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "added simple lon/lat search to station controller",
+                "commit": "c73418f953918895255cdbabadb6ccbe43a36e84",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T08:07:05-08:00",
+                "committer_date": "2013-11-29T08:07:05-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/0939ba23b5682a9e175be32210c02203e189a35f",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed bug with lat/long order",
+                "commit": "0939ba23b5682a9e175be32210c02203e189a35f",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T08:13:15-08:00",
+                "committer_date": "2013-11-29T08:13:15-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/30135367ad4d747c50f5d2c85af1b90076e7a6e6",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds indexed columns in address and position entity",
+                "commit": "30135367ad4d747c50f5d2c85af1b90076e7a6e6",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/15",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T16:43:23.797Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T13:48:45.052Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T05:47:23-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64657,
+                "public_ip_addr": "54.196.16.180"
+            }
+        ],
+        "committer_date": "2013-11-29T05:47:23-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 159123,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T13:48:45.200Z",
+        "stop_time": "2013-11-29T13:51:24.323Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "adds cache headers to detail page resources",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 168746,
+            "status": "success",
+            "build_num": 13
+        },
+        "outcome": "success",
+        "status": "success",
+        "vcs_revision": "f4e8e17b948e9b79d0bfc05ebbc62027b614c93d",
+        "build_num": 14,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 168746,
+            "status": "success",
+            "build_num": 13
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T05:47:23-08:00",
+                "committer_date": "2013-11-29T05:47:23-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/f4e8e17b948e9b79d0bfc05ebbc62027b614c93d",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds cache headers to detail page resources",
+                "commit": "f4e8e17b948e9b79d0bfc05ebbc62027b614c93d",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "has_artifacts": true,
+        "failed": null,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/14",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T13:48:45.122Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T13:38:08.328Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T05:34:22-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64601,
+                "public_ip_addr": "54.196.16.180"
+            }
+        ],
+        "committer_date": "2013-11-29T05:34:22-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 168746,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T13:38:08.505Z",
+        "stop_time": "2013-11-29T13:40:57.251Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "updated composer.json",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 136777,
+            "status": "success",
+            "build_num": 8
+        },
+        "outcome": "success",
+        "status": "success",
+        "vcs_revision": "98a30e75984c0ac9cb77465323621fee6e96871b",
+        "build_num": 13,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 922567,
+            "status": "canceled",
+            "build_num": 12
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T05:34:22-08:00",
+                "committer_date": "2013-11-29T05:34:22-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/98a30e75984c0ac9cb77465323621fee6e96871b",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "updated composer.json",
+                "commit": "98a30e75984c0ac9cb77465323621fee6e96871b",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "has_artifacts": true,
+        "failed": null,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/13",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T13:38:08.431Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T13:05:05.779Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T04:00:46-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64546,
+                "public_ip_addr": "23.21.5.200"
+            }
+        ],
+        "committer_date": "2013-11-29T04:00:46-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 922567,
+        "why": "ssh",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": false,
+        "start_time": "2013-11-29T13:05:05.915Z",
+        "stop_time": "2013-11-29T13:20:28.482Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "adds icu component",
+        "messages": [],
+        "job_name": null,
+        "retry_of": 11,
+        "previous_successful_build": {
+            "build_time_millis": 136777,
+            "status": "success",
+            "build_num": 8
+        },
+        "outcome": "canceled",
+        "status": "canceled",
+        "vcs_revision": "9062ef196cfd56bb0540012a888c9223735ea63f",
+        "build_num": 12,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 25841,
+            "status": "failed",
+            "build_num": 11
+        },
+        "canceled": true,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/12",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T13:05:05.840Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T12:00:51.923Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T04:00:46-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64590,
+                "public_ip_addr": "54.205.120.143"
+            }
+        ],
+        "committer_date": "2013-11-29T04:00:46-08:00",
+        "retries": [
+            12
+        ],
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 25841,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T12:00:52.089Z",
+        "stop_time": "2013-11-29T12:01:17.930Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "adds icu component",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 136777,
+            "status": "success",
+            "build_num": 8
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "9062ef196cfd56bb0540012a888c9223735ea63f",
+        "build_num": 11,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 28415,
+            "status": "failed",
+            "build_num": 10
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T04:00:46-08:00",
+                "committer_date": "2013-11-29T04:00:46-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/9062ef196cfd56bb0540012a888c9223735ea63f",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds icu component",
+                "commit": "9062ef196cfd56bb0540012a888c9223735ea63f",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/11",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T12:00:52.003Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-29T11:54:53.478Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "2013-11-29T03:53:39-08:00",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64729,
+                "public_ip_addr": "54.196.8.237"
+            }
+        ],
+        "committer_date": "2013-11-29T03:53:39-08:00",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 28415,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-29T11:54:53.615Z",
+        "stop_time": "2013-11-29T11:55:22.030Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "refactored tests to be in seperate files for each eaction",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 136777,
+            "status": "success",
+            "build_num": 8
+        },
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "1f36d37760b791ff256233c99c73dfc5af2dfe9c",
+        "build_num": 10,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 1155905,
+            "status": "canceled",
+            "build_num": 9
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T05:52:45-08:00",
+                "committer_date": "2013-11-15T05:52:45-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/f0f9b16f86c53874acdf7e6cb5136c847804764a",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds shell script which updates php version in the vagrant box",
+                "commit": "f0f9b16f86c53874acdf7e6cb5136c847804764a",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T06:01:28-08:00",
+                "committer_date": "2013-11-15T06:01:28-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/e24ced4c748fdbb3defccd1b2a8d3a1c70fc507e",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "excludes the 'Test' directories from code-coverage reports in phpunit.dist.xml",
+                "commit": "e24ced4c748fdbb3defccd1b2a8d3a1c70fc507e",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T06:04:26-08:00",
+                "committer_date": "2013-11-15T06:04:26-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/5194dee7c3962e27488395759e08497bb4e14462",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "replaced array with short notation '[]' in all sources",
+                "commit": "5194dee7c3962e27488395759e08497bb4e14462",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T06:04:58-08:00",
+                "committer_date": "2013-11-15T06:04:58-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/45fe9a94def9cee030a0ab9bab1dba5163709d03",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "ignored doc/code-coverage",
+                "commit": "45fe9a94def9cee030a0ab9bab1dba5163709d03",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T06:27:01-08:00",
+                "committer_date": "2013-11-15T06:27:01-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/115ebba8b477b965516ac7ae0ebee725e32e2867",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed path for coverage-report in gitignore",
+                "commit": "115ebba8b477b965516ac7ae0ebee725e32e2867",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T06:27:26-08:00",
+                "committer_date": "2013-11-15T06:27:26-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/e846e1de4628b861c22134bd60a916502e2c9353",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "extracted createdAt/updatedAt as Trait, Fixed Tests for that",
+                "commit": "e846e1de4628b861c22134bd60a916502e2c9353",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T06:49:52-08:00",
+                "committer_date": "2013-11-15T06:49:52-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/57e5e094c8729900994e779579299c305d30034a",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds simple test for invalid GasType names",
+                "commit": "57e5e094c8729900994e779579299c305d30034a",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T08:15:28-08:00",
+                "committer_date": "2013-11-15T08:15:28-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/b6f6f6647c2e43becf4af2f5251afb66a34a4987",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "more",
+                "commit": "b6f6f6647c2e43becf4af2f5251afb66a34a4987",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T09:20:20-08:00",
+                "committer_date": "2013-11-15T09:20:20-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/76c6597f6874e2dc738ccb3d665dc647335a0a8d",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "removed apache2 in favor for nginx",
+                "commit": "76c6597f6874e2dc738ccb3d665dc647335a0a8d",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T09:40:37-08:00",
+                "committer_date": "2013-11-15T09:40:37-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/792ef7304c1a8ae9bdc05ee0881de3cf2971aac7",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "full nginx completed",
+                "commit": "792ef7304c1a8ae9bdc05ee0881de3cf2971aac7",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T09:42:40-08:00",
+                "committer_date": "2013-11-15T09:42:40-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/feae3f70ec503b82f0510cac96ef199671193f3d",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "changed order of recipes in default",
+                "commit": "feae3f70ec503b82f0510cac96ef199671193f3d",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-15T09:42:58-08:00",
+                "committer_date": "2013-11-15T09:42:58-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/a1f28bd91bb62cbce619feb25c79e8d3303bb58e",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "changed order of recipes in default",
+                "commit": "a1f28bd91bb62cbce619feb25c79e8d3303bb58e",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "2013-11-29T03:53:39-08:00",
+                "committer_date": "2013-11-29T03:53:39-08:00",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/1f36d37760b791ff256233c99c73dfc5af2dfe9c",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "refactored tests to be in seperate files for each eaction",
+                "commit": "1f36d37760b791ff256233c99c73dfc5af2dfe9c",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/10",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-29T11:54:53.542Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-15T13:07:48.636Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384450373",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64566,
+                "public_ip_addr": "54.237.90.58"
+            }
+        ],
+        "committer_date": "1384450373",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 1155905,
+        "why": "ssh",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": false,
+        "start_time": "2013-11-15T13:08:04.700Z",
+        "stop_time": "2013-11-15T13:27:20.605Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "enabled xdebug and coder-coverage env parameter in circle.yml",
+        "messages": [],
+        "job_name": null,
+        "retry_of": 8,
+        "previous_successful_build": {
+            "build_time_millis": 136777,
+            "status": "success",
+            "build_num": 8
+        },
+        "outcome": "canceled",
+        "status": "canceled",
+        "vcs_revision": "fdd6df5bad7e4a868bb7898a3f15e0070259cea2",
+        "build_num": 9,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 136777,
+            "status": "success",
+            "build_num": 8
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384450373",
+                "committer_date": "1384450373",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/fdd6df5bad7e4a868bb7898a3f15e0070259cea2",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "enabled xdebug and coder-coverage env parameter in circle.yml",
+                "commit": "fdd6df5bad7e4a868bb7898a3f15e0070259cea2",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": true,
+        "infrastructure_fail": false,
+        "has_artifacts": true,
+        "failed": null,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/9",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-15T13:07:48.672Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-14T17:33:00.004Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384450373",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64608,
+                "public_ip_addr": "54.234.247.94"
+            }
+        ],
+        "committer_date": "1384450373",
+        "retries": [
+            9
+        ],
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 136777,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-14T17:33:00.102Z",
+        "stop_time": "2013-11-14T17:35:16.879Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "enabled xdebug and coder-coverage env parameter in circle.yml",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": {
+            "build_time_millis": 105913,
+            "status": "fixed",
+            "build_num": 6
+        },
+        "outcome": "success",
+        "status": "success",
+        "vcs_revision": "fdd6df5bad7e4a868bb7898a3f15e0070259cea2",
+        "build_num": 8,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 184738,
+            "status": "canceled",
+            "build_num": 7
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384450373",
+                "committer_date": "1384450373",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/fdd6df5bad7e4a868bb7898a3f15e0070259cea2",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "enabled xdebug and coder-coverage env parameter in circle.yml",
+                "commit": "fdd6df5bad7e4a868bb7898a3f15e0070259cea2",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "has_artifacts": true,
+        "failed": null,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/8",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-14T17:33:00.052Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-14T17:29:01.029Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384449962",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64683,
+                "public_ip_addr": "204.236.222.220"
+            }
+        ],
+        "committer_date": "1384449962",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 184738,
+        "why": "ssh",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": false,
+        "start_time": "2013-11-14T17:29:01.137Z",
+        "stop_time": "2013-11-14T17:32:05.875Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "fixed --coverage-reprot to --coverage-html parameter in circle.yml",
+        "messages": [],
+        "job_name": null,
+        "retry_of": 6,
+        "previous_successful_build": {
+            "build_time_millis": 105913,
+            "status": "fixed",
+            "build_num": 6
+        },
+        "outcome": "canceled",
+        "status": "canceled",
+        "vcs_revision": "e359e7a50c4de68b68d0c0e9b2dc119b1e6980b6",
+        "build_num": 7,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 105913,
+            "status": "fixed",
+            "build_num": 6
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384449962",
+                "committer_date": "1384449962",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/e359e7a50c4de68b68d0c0e9b2dc119b1e6980b6",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed --coverage-reprot to --coverage-html parameter in circle.yml",
+                "commit": "e359e7a50c4de68b68d0c0e9b2dc119b1e6980b6",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": true,
+        "infrastructure_fail": false,
+        "failed": null,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/7",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-14T17:29:01.066Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-14T17:26:10.021Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384449962",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64723,
+                "public_ip_addr": "184.72.210.205"
+            }
+        ],
+        "committer_date": "1384449962",
+        "retries": [
+            7
+        ],
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 105913,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-14T17:26:10.120Z",
+        "stop_time": "2013-11-14T17:27:56.033Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "fixed --coverage-reprot to --coverage-html parameter in circle.yml",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": null,
+        "outcome": "success",
+        "status": "fixed",
+        "vcs_revision": "e359e7a50c4de68b68d0c0e9b2dc119b1e6980b6",
+        "build_num": 6,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 92434,
+            "status": "failed",
+            "build_num": 5
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384449962",
+                "committer_date": "1384449962",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/e359e7a50c4de68b68d0c0e9b2dc119b1e6980b6",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed --coverage-reprot to --coverage-html parameter in circle.yml",
+                "commit": "e359e7a50c4de68b68d0c0e9b2dc119b1e6980b6",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": null,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/6",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-14T17:26:10.060Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-14T17:18:58.094Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384449532",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64601,
+                "public_ip_addr": "23.20.62.118"
+            }
+        ],
+        "committer_date": "1384449532",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 92434,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-14T17:18:58.209Z",
+        "stop_time": "2013-11-14T17:20:30.643Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "AppKernel detects vagrant",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": null,
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "7034a04e6d0a87fae93f041c9e3a28eceab5284d",
+        "build_num": 5,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 307971,
+            "status": "canceled",
+            "build_num": 4
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384449532",
+                "committer_date": "1384449532",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/7034a04e6d0a87fae93f041c9e3a28eceab5284d",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "AppKernel detects vagrant",
+                "commit": "7034a04e6d0a87fae93f041c9e3a28eceab5284d",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/5",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-14T17:18:58.136Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-14T17:09:15.592Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384448791",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64704,
+                "public_ip_addr": "54.224.192.142"
+            }
+        ],
+        "committer_date": "1384448791",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 307971,
+        "why": "ssh",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": false,
+        "start_time": "2013-11-14T17:09:15.849Z",
+        "stop_time": "2013-11-14T17:14:23.820Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "update on circle.yml",
+        "messages": [],
+        "job_name": null,
+        "retry_of": 3,
+        "previous_successful_build": null,
+        "outcome": "canceled",
+        "status": "canceled",
+        "vcs_revision": "ebd321064c8a62c354d1ab695e2be586302ec17f",
+        "build_num": 4,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 70588,
+            "status": "failed",
+            "build_num": 3
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~1",
+                "body": "",
+                "author_date": "1384448656",
+                "committer_date": "1384448656",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/8eec43c54fca5df5b23df0a9663d451e09f42573",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed issue with duplicate companies when running import:garmin:csv",
+                "commit": "8eec43c54fca5df5b23df0a9663d451e09f42573",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384448791",
+                "committer_date": "1384448791",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/ebd321064c8a62c354d1ab695e2be586302ec17f",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "update on circle.yml",
+                "commit": "ebd321064c8a62c354d1ab695e2be586302ec17f",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": true,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/4",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-14T17:09:15.679Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-14T17:06:36.809Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384448791",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64586,
+                "public_ip_addr": "184.73.71.113"
+            }
+        ],
+        "committer_date": "1384448791",
+        "retries": [
+            4
+        ],
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 70588,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-14T17:06:39.931Z",
+        "stop_time": "2013-11-14T17:07:50.519Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "update on circle.yml",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": null,
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "ebd321064c8a62c354d1ab695e2be586302ec17f",
+        "build_num": 3,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 87401,
+            "status": "failed",
+            "build_num": 2
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~1",
+                "body": "",
+                "author_date": "1384448656",
+                "committer_date": "1384448656",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/8eec43c54fca5df5b23df0a9663d451e09f42573",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "fixed issue with duplicate companies when running import:garmin:csv",
+                "commit": "8eec43c54fca5df5b23df0a9663d451e09f42573",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384448791",
+                "committer_date": "1384448791",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/ebd321064c8a62c354d1ab695e2be586302ec17f",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "update on circle.yml",
+                "commit": "ebd321064c8a62c354d1ab695e2be586302ec17f",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/3",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-14T17:06:36.837Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-14T16:48:10.975Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384447685",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64633,
+                "public_ip_addr": "54.225.26.222"
+            }
+        ],
+        "committer_date": "1384447685",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 87401,
+        "why": "github",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-14T16:48:11.120Z",
+        "stop_time": "2013-11-14T16:49:38.521Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "adds first circle.yml",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": null,
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "a682aca6ed3e9380b6c874eecab789080b36f4d1",
+        "build_num": 2,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": {
+            "build_time_millis": 17979,
+            "status": "failed",
+            "build_num": 1
+        },
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~7",
+                "body": "",
+                "author_date": "1384429094",
+                "committer_date": "1384429094",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/585b473171f0594042549d40bca96fe506c3b3b7",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "garmin:csv import command",
+                "commit": "585b473171f0594042549d40bca96fe506c3b3b7",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~6",
+                "body": "",
+                "author_date": "1384429727",
+                "committer_date": "1384429727",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/5876d0b2286ce2325e7f4a1ced6f0af462f55cc0",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds some documentation on the poi file formats",
+                "commit": "5876d0b2286ce2325e7f4a1ced6f0af462f55cc0",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~5",
+                "body": "",
+                "author_date": "1384429737",
+                "committer_date": "1384429737",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/d275eef79168ec6f00c21941152b9b3c303088ea",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "updated description for import:garmin:csv command",
+                "commit": "d275eef79168ec6f00c21941152b9b3c303088ea",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~4",
+                "body": "",
+                "author_date": "1384430367",
+                "committer_date": "1384430367",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/24425e1fc75daf7704d9b66c99c54c9861226a0a",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "update on geodata format docu",
+                "commit": "24425e1fc75daf7704d9b66c99c54c9861226a0a",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~3",
+                "body": "",
+                "author_date": "1384445609",
+                "committer_date": "1384445609",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/8bf27edf38baf0ff1d815f1f4b40d7237273c324",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "first api bundle stuff for company and stations",
+                "commit": "8bf27edf38baf0ff1d815f1f4b40d7237273c324",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~2",
+                "body": "",
+                "author_date": "1384445702",
+                "committer_date": "1384445702",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/34ee937575fb0bc07baae2e19737db9a13a9ca1b",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "first api bundle stuff for company and stations",
+                "commit": "34ee937575fb0bc07baae2e19737db9a13a9ca1b",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master~1",
+                "body": "",
+                "author_date": "1384447470",
+                "committer_date": "1384447470",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/c61be97317314545eb8717b700f1e4271c8d8903",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "more unit testing galore",
+                "commit": "c61be97317314545eb8717b700f1e4271c8d8903",
+                "author_name": "Marcel Eichner"
+            },
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384447685",
+                "committer_date": "1384447685",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/a682aca6ed3e9380b6c874eecab789080b36f4d1",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "adds first circle.yml",
+                "commit": "a682aca6ed3e9380b6c874eecab789080b36f4d1",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/2",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-14T16:48:11.045Z"
+    },
+    {
+        "dont_build": null,
+        "committer_name": "Marcel Eichner",
+        "usage_queued_at": "2013-11-14T16:45:19.318Z",
+        "branch": "master",
+        "body": "",
+        "author_date": "1384359421",
+        "node": [
+            {
+                "username": "ubuntu",
+                "ssh_enabled": null,
+                "port": 64583,
+                "public_ip_addr": "184.73.71.113"
+            }
+        ],
+        "committer_date": "1384359421",
+        "retries": null,
+        "parallel": 1,
+        "committer_email": "love@ephigenia.de",
+        "build_time_millis": 17979,
+        "why": "first-build",
+        "author_email": "love@ephigenia.de",
+        "ssh_enabled": null,
+        "start_time": "2013-11-14T16:46:03.827Z",
+        "stop_time": "2013-11-14T16:46:21.806Z",
+        "lifecycle": "finished",
+        "user": {
+            "is_user": true,
+            "login": "Ephigenia",
+            "name": "Marcel Eichner",
+            "email": "marcel.eichner@foobugs.com"
+        },
+        "subject": "address with str. conversion, csv import script for shell",
+        "messages": [],
+        "job_name": null,
+        "retry_of": null,
+        "previous_successful_build": null,
+        "outcome": "failed",
+        "status": "failed",
+        "vcs_revision": "ae66c54b5ba81f210d2244be8109e0cac626f908",
+        "build_num": 1,
+        "vcs_url": "https://github.com/foobugs/spritmap-api",
+        "timedout": false,
+        "previous": null,
+        "all_commit_details": [
+            {
+                "committer_name": "Marcel Eichner",
+                "branch": "master",
+                "body": "",
+                "author_date": "1384359421",
+                "committer_date": "1384359421",
+                "commit_url": "https://github.com/foobugs/spritmap-api/commit/ae66c54b5ba81f210d2244be8109e0cac626f908",
+                "committer_email": "love@ephigenia.de",
+                "author_email": "love@ephigenia.de",
+                "subject": "address with str. conversion, csv import script for shell",
+                "commit": "ae66c54b5ba81f210d2244be8109e0cac626f908",
+                "author_name": "Marcel Eichner"
+            }
+        ],
+        "canceled": false,
+        "infrastructure_fail": false,
+        "failed": true,
+        "build_url": "https://circleci.com/gh/foobugs/spritmap-api/1",
+        "author_name": "Marcel Eichner",
+        "queued_at": "2013-11-14T16:46:03.688Z"
+    }
+]

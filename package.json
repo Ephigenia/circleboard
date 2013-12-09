@@ -1,0 +1,29 @@
+{
+  "name": "circleboard",
+  "version": "0.0.1",
+  "description": "circleci status board",
+  "main": "index.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:foobugs/circleboard.git"
+  },
+  "keywords": [
+    "circleci",
+    "ci",
+    "status",
+    "board",
+    "dashboard",
+    "unit-test",
+    "display",
+    "continuous",
+    "integration"
+  ],
+  "author": "Marcel Eichner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foobugs/circleboard/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
