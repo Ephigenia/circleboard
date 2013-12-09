@@ -1,5 +1,8 @@
 API_KEY = "2148d071495b9cda230b7a808ed6a79523374dee"
-port = 5000;
+if process.env.PORT
+  port = process.env.PORT
+else
+  port = 5000
 
 https = require('https')
 app = require('express')()
