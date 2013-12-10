@@ -11,6 +11,7 @@ else
   CONFIG = require './config.dist.coffee'
 
 # check if apiKey is empty and try to get it from env variables
+console.log process.env
 unless CONFIG.apiKey?
   CONFIG.apiKey = process.env.CIRCLE_CI_API_KEY
 unless !!CONFIG.apiKey
