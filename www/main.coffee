@@ -58,17 +58,22 @@ class Build extends Backbone.Model
   getUniqueId: ->
     return @get 'uuid'
 
-views = {}
-updateBuild = (data) ->
-  build = new Build data
-  uniqueId = build.getUniqueId()
-  if views[uniqueId]?
-    views[uniqueId].model.set data
-  else
-    views[uniqueId] = new BuildView
-      model: build
-  views[uniqueId].render()  
+class IndexController
 
-socket = io.connect 'http://'
-socket.on 'build', (buildData) ->
-  updateBuild buildData
+  views: {}
+
+  constructor: ->
+    socket = io.connect 'http://'
+    socket.on 'build', @updateBuild
+
+  updateBuild: (data) =>
+    build = new Build data
+    uniqueId = build.getUniqueId()
+    if @views[uniqueId]?
+      @views[uniqueId].model.set data
+    else
+      @views[uniqueId] = new BuildView
+        model: build
+    @views[uniqueId].render()
+
+window.app = new IndexController()
