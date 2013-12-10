@@ -1,0 +1,85 @@
+@buildTextColor: #fff;
+@buildBackgroundColorSuccess: #7eab38;
+@buildBackgroundColorFailed: #900812;
+@buildBackgroundColorRunning: #fdc309;
+@buildBackgroundColorCanceled: desaturate(@buildBackgroundColorFailed, 100%);
+
+// mixin for creating different build boxes with different base color sheme
+.buildBox(@textColor: #fff, @backgroundColor) {
+    background-color: @backgroundColor;
+    .commit {
+        color: mix(@textColor, @backgroundColor, 80);
+        > figure.avatar > img {
+            border-color: darken(@backgroundColor, 10);
+        }
+    }
+    time {
+        color: darken(@backgroundColor, 20);
+    }
+}
+
+div.build {
+    @textColor: @buildTextColor;
+    color: @textColor;
+    box-sizing: border-box;
+    
+    // add media-query to clear after some elements if screen gets to small
+    width: 25%;
+    height: 210px;
+
+    padding: @padding-base-vertical @padding-base-horizontal;
+
+    display: table;
+    float: left;
+    position: relative;
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .commit {
+        margin-top: 1em;
+        > figure.avatar {
+            width: 20%;
+            float: left;
+            > img {
+                margin-top: 5px;
+                border: 2px solid @buildTextColor;
+                border-radius: 100em;
+                width: 90%;
+            }
+        }
+        > blockquote {
+            width: 77%;
+            margin-left: 3%;
+            float: right;
+            > author {
+                clear: left;
+                display: block;
+                font-weight: bold;
+            }
+        }
+    }
+
+    time {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0.3em;
+        font-size: small;
+    }
+
+    // different styles for different build status
+    &-success {
+        .buildBox(@textColor, @buildBackgroundColorSuccess);
+    }
+    &-canceled {
+        .buildBox(@textColor, @buildBackgroundColorCanceled);
+    }
+    &-failed {
+        .buildBox(@textColor, @buildBackgroundColorFailed);
+    }
+    &-running {
+        .buildBox(@textColor, @buildBackgroundColorRunning);
+    }
+}
