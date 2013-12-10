@@ -41,12 +41,9 @@ class BuildView extends View
 
   getTemplateData: ->
     data = super
-    if data.project.length > 20
-      data.project = data.project.substr(0, 20) + '…'
-    if data.commit.subject.length > 80
-      data.commit.subject = data.commit.subject.length.substr(0, 79) + '…'
-    data.commit.author.emailhash = CryptoJS.MD5(data.commit.author.email);
-    data.finished = moment(data.finished).fromNow()
+    data.authorEmailHash = CryptoJS.MD5 data.committer_email
+    data.finished = moment(data.stop_time).fromNow()
+    data.subject = 'asdlkj'
     return data
 
   render: ->
@@ -56,7 +53,7 @@ class BuildView extends View
 class Build extends Backbone.Model
 
   getUniqueId: ->
-    return @get 'uuid'
+    return @get('name') + @get('branch')
 
 class IndexController
 
@@ -67,7 +64,8 @@ class IndexController
     socket.on 'build', @updateBuild
 
   updateBuild: (data) =>
-    build = new Build data
+    build = new Build data.build
+    build.set 'name', data.name
     uniqueId = build.getUniqueId()
     if @views[uniqueId]?
       @views[uniqueId].model.set data

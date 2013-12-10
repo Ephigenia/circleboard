@@ -12,19 +12,19 @@
         <div id="app"></div>
 
         <script id="build-template" type="text/x-handlebars-template">
-            <h1 class="project-name">{{project}}</h1>
+            <h1 class="project-name">{{name}}</h1>
             <h2>
-                <span class="branch">{{branch.name}}</span>
-                (#<span class="build-number">{{number}}</span>)
+                <span class="branch">{{branch}}</span>
+                (#<span class="build-number">{{build_num}}</span>)
             </h2>
             <div class="commit">
                 <figure class="avatar">
-                    <img src="//www.gravatar.com/avatar/{{commit.author.emailhash}}?s=100" border="0" />
+                    <img src="//www.gravatar.com/avatar/{{authorEmailHash}}?s=100" border="0" />
                 </figure>
                 <blockquote>
-                    <q class="subject">{{commit.subject}}</q>
+                    <q class="subject">{{subject}}</q>
                     <author>
-                        {{commit.author.name}}
+                        {{committer_name}}
                     </author>
                 </blockquote>
             </div>
