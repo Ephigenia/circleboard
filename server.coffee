@@ -2,13 +2,13 @@ API_KEY = "2148d071495b9cda230b7a808ed6a79523374dee"
 
 CONFIG =
   interval: 10
-  projects: []
+  projects: [
     {
       name: 'Snoopet'
       path: 'bevation/snoopet/tree/master'
     }
     {
-      name: 'Snoopet Dev'
+      name: 'Snoopet'
       path: 'bevation/snoopet/tree/development'
     }
     {
@@ -16,7 +16,7 @@ CONFIG =
       path: 'bevation/snoopet-mobile/tree/master'
     }
     {
-      name: 'Snoopet Mobile Dev'
+      name: 'Snoopet Mobile'
       path: 'bevation/snoopet-mobile/tree/development'
     }
     {
@@ -64,6 +64,7 @@ parseResponseToBuildArray = (name, body) ->
   for commit in commits
     # transform the circle-ci response to frontend response model
     builds.push
+      uuid: name + commit.branch
       number: commit.build_num
       result: commit.outcome
       url: commit.build_url
@@ -76,7 +77,7 @@ parseResponseToBuildArray = (name, body) ->
         hash: commit.vcs_revision
         author:
           name: commit.committer_name
-          email: commit.author_email
+          email: commit.committer_email
       branch:
         name: commit.branch
         status: commit.status

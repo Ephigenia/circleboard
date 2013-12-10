@@ -15,6 +15,7 @@ class View extends Backbone.View
   attach: ->
     unless @isAttached
       $(@container)[@containerMethod](@$el)
+      @isAttached = true
     @
 
 class BuildView extends View
@@ -24,6 +25,17 @@ class BuildView extends View
   container: '#app'
   containerMethod: 'append'
 
+  initialize: ->
+    super
+    @model.on 'change:result', @onChangeResult
+
+  onChangeResult: (model) =>
+    classes = [
+      @className
+      "build-" + model.get('result')
+    ]
+    @$el.attr 'class', classes.join ' '
+
   getTemplateData: ->
     data = super
     if data.project.length > 20
@@ -31,25 +43,29 @@ class BuildView extends View
     if data.commit.subject.length > 80
       data.commit.subject = data.commit.subject.length.substr(0, 79) + '…'
     data.commit.author.emailhash = CryptoJS.MD5(data.commit.author.email);
+    data.finished = moment(data.finished).fromNow()
     return data
 
-  attach: ->
-    @$el.addClass "build-" + @model.get('result')
+  render: ->
+    @onChangeResult @model
     super
 
 class Build extends Backbone.Model
 
+  getUniqueId: ->
+    return @get 'uuid'
 
 views = {}
-
-# main application
-socket = io.connect 'http://'
-socket.on 'build', (buildData) ->
-  build = new Build buildData
-  uniqueId = build.get 'project'
+updateBuild = (data) ->
+  build = new Build data
+  uniqueId = build.getUniqueId()
   if views[uniqueId]?
-    views[uniqueId].model.set buildData
+    views[uniqueId].model.set data
   else
     views[uniqueId] = new BuildView
       model: build
-  views[uniqueId].render()
+  views[uniqueId].render()  
+
+socket = io.connect 'http://'
+socket.on 'build', (buildData) ->
+  updateBuild buildData
