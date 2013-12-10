@@ -1,7 +1,7 @@
 API_KEY = "2148d071495b9cda230b7a808ed6a79523374dee"
 
 CONFIG =
-  interval: 10
+  interval: 20
   projects: [
     {
       name: 'Snoopet'
@@ -46,43 +46,43 @@ io.sockets.on 'connection', (socket) ->
   # iterate over configured projects and get builds for each and send
   # the last build to the frontend, repeat the whole thing every interval 
   # seconds
-  for config in CONFIG.projects
-    processCircleCiProject socket, config
+  updateAllProjects = () ->
+    console.log 'Updating all Projects'
+    for config in CONFIG.projects
+      processCircleCiProject socket, config
+  setInterval updateAllProjects, CONFIG.interval * 1000
+  updateAllProjects()
+
 
 processCircleCiProject = (socket, config) ->
   success = (response) =>
-    builds = parseResponseToBuildArray config.name, response
-    console.log config.name
-    socket.emit 'build', builds[0]
+    lastBuild = parseResponseToBuildArray config.name, response
+    socket.emit 'build', lastBuild
   getCircleCiStatusApi config.path, API_KEY, success
 
 parseResponseToBuildArray = (name, body) ->
-  commits = JSON.parse(body)
-
-  # find the last build
-  builds = []
-  for commit in commits
-    # transform the circle-ci response to frontend response model
-    builds.push
-      uuid: name + commit.branch
-      number: commit.build_num
-      result: commit.outcome
-      url: commit.build_url
-      project: name
-      started: commit.start_time
-      finished: commit.stop_time
-      duration: commit.build_time_millis
-      commit:
-        subject: commit.subject
-        hash: commit.vcs_revision
-        author:
-          name: commit.committer_name
-          email: commit.committer_email
-      branch:
-        name: commit.branch
-        status: commit.status
-
-  return builds
+  builds = JSON.parse(body)
+  lastBuild = builds[0]
+  uuid = name + lastBuild.branch
+  return {
+    uuid: uuid
+    number: lastBuild.build_num
+    outcome: lastBuild.outcome
+    status: lastBuild.status
+    url: lastBuild.build_url
+    project: name
+    started: lastBuild.start_time
+    finished: lastBuild.stop_time
+    duration: lastBuild.build_time_millis
+    commit:
+      subject: lastBuild.subject
+      hash: lastBuild.vcs_revision
+      author:
+        name: lastBuild.committer_name
+        email: lastBuild.committer_email
+    branch:
+      name: lastBuild.branch
+  }
 
 getCircleCiStatusApi = (path, apiKey, success) ->
   # build http request for retreiving informations about the circleci project

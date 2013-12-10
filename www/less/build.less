@@ -2,6 +2,7 @@
 @buildBackgroundColorSuccess: #7eab38;
 @buildBackgroundColorFailed: #900812;
 @buildBackgroundColorRunning: #fdc309;
+@buildBackgroundColorScheduled: #1785a2;
 @buildBackgroundColorCanceled: desaturate(@buildBackgroundColorFailed, 100%);
 
 // mixin for creating different build boxes with different base color sheme
@@ -50,7 +51,6 @@ div.build {
             width: 20%;
             float: left;
             > img {
-                margin-top: 5px;
                 border: 2px solid @buildTextColor;
                 border-radius: 100em;
                 width: 90%;
@@ -88,5 +88,8 @@ div.build {
     }
     &-running {
         .buildBox(@textColor, @buildBackgroundColorRunning);
+    }
+    &-scheduled {
+        .buildBox(@textColor, @buildBackgroundColorScheduled);
     }
 }
