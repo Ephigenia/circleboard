@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CircleBoard – The CircleCI Status Board</title>
+        <meta name="description" content="CircleBoard – The CircleCI Status Board">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script id="build-template" type="text/x-handlebars-template">
+            <h1 class="project-name">{{project}}</h1>
+            <h2>
+                <span class="branch">{{branch.name}}</span>
+                (#<span class="build-number">{{number}}</span>)
+            </h2>
+            <div class="commit">
+                <figure class="avatar">
+                    <img src="//www.gravatar.com/avatar/{{commit.author.emailhash}}?s=100" border="0" />
+                </figure>
+                <blockquote>
+                    <q class="subject">{{commit.subject}}</q>
+                    <author>
+                        {{commit.author.name}}
+                    </author>
+                </blockquote>
+            </div>
+            <time datetime="">{{finished}}</time>
+        </script>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="//zeptojs.com/zepto.min.js"></script>
+        <script src="//crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
+        <script src="/vendor/less.js"></script>
+        <script src="/vendor/underscore.1.5.2.js"></script>
+        <script src="/vendor/backbone.1.1.0.js"></script>
+        <script src="/vendor/handlebars.1.1.2.js"></script>
+        <script src="/vendor/moment.2.4.0.js"></script>
+        <script src="/main.js"></script>
+    </body>
+</html>
