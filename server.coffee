@@ -11,8 +11,8 @@ else
   CONFIG = require './config.dist.coffee'
 
 # check if apiKey is empty and try to get it from env variables
-unless CONFIG.apiKey?
-  console.log 'trying to get circle ci status api key from environment variable CIRCLE_CI_API_KEY'
+unless !!CONFIG.apiKey
+  console.log 'trying to get circle ci status api key from environment variable CIRCLE_CI_API_KEY …'
   CONFIG.apiKey = process.env.CIRCLE_CI_API_KEY
 unless !!CONFIG.apiKey
   console.error """
@@ -22,8 +22,6 @@ unless !!CONFIG.apiKey
 
 unless webroot
   webroot = __dirname + '/www/'
-
-
 
 server.listen(process.env.PORT || 5000)
 app.use(express.static(webroot))
