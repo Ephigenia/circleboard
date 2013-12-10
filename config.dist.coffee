@@ -35,6 +35,10 @@ CONFIG =
       name: 'Spritmap Client'
       path: 'foobugs/spritmap-client/tree/master'
     }
+    {
+      name: "CircleBoard"
+      path: 'foobugs/circleboard/tree/master'
+    }
   ]
 
 module.exports = CONFIG
