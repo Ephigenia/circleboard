@@ -1,33 +1,13 @@
-API_KEY = "2148d071495b9cda230b7a808ed6a79523374dee"
+CONFIG = require './config.coffee'
 
-CONFIG =
-  interval: 20
-  projects: [
-    {
-      name: 'Snoopet'
-      path: 'bevation/snoopet/tree/master'
-    }
-    {
-      name: 'Snoopet'
-      path: 'bevation/snoopet/tree/development'
-    }
-    {
-      name: 'Snoopet Mobile'
-      path: 'bevation/snoopet-mobile/tree/master'
-    }
-    {
-      name: 'Snoopet Mobile'
-      path: 'bevation/snoopet-mobile/tree/development'
-    }
-    {
-      name: 'Spritmap API'
-      path: 'foobugs/spritmap-api/tree/master'
-    }
-    {
-      name: 'Spritmap Client'
-      path: 'foobugs/spritmap-client/tree/master'
-    }
-  ]
+# check if apiKey is empty and try to get it from env variables
+unless CONFIG.apiKey?
+  CONFIG.apiKey = process.env.CIRCLE_CI_API_KEY
+unless !!CONFIG.apiKey
+  console.error """
+  missing circle ci api key, try to set in config.coffee or in CIRCLE_CI_API_KEY enviroment variable
+  """
+  process.exit(1)
 
 unless webroot
   webroot = __dirname + '/www/'
@@ -58,7 +38,7 @@ processCircleCiProject = (socket, config) ->
   success = (response) =>
     lastBuild = parseResponseToBuildArray config.name, response
     socket.emit 'build', lastBuild
-  getCircleCiStatusApi config.path, API_KEY, success
+  getCircleCiStatusApi config.path, CONFIG.apiKey, success
 
 parseResponseToBuildArray = (name, body) ->
   builds = JSON.parse(body)
