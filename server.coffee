@@ -1,10 +1,9 @@
-fs = require('fs')
-
+fs = require 'fs'
 http = require 'http'
 express = require 'express'
+socketIo = require 'socket.io'
 app = express()
 server = http.createServer app
-socketIo = require 'socket.io'
 io = socketIo.listen server
 
 CircleCiApi = require './libraries/circleCiApi.coffee'
