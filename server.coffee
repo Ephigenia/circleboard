@@ -34,17 +34,20 @@ app.use(express.static("./www/"))
 app.get '/', (request, response) ->
   response.sendfile "./www/index.html"
 
+processProject = (socket, config) ->
+  circleCiApi.getBuilds config.path, null, (builds) ->
+    console.info """
+    received #{builds.length} builds in #{config.name}
+    """
+    socket.emit "build", { name: config.name, build: builds[0] }
+
 # socket.io
 circleCiApi = new CircleCiApi CONFIG.apiKey
 io.sockets.on 'connection', (socket) ->  
   updateAllProjects = () ->
     console.info "Updating #{CONFIG.projects.length} projects …"
     for config in CONFIG.projects
-      circleCiApi.getBuilds config.path, null, (builds) ->
-        console.info """
-        received informations about #{builds.length} builds
-        """
-        socket.emit "build", { name: config.name, build: builds[0] }
+      processProject socket, config
   # create interval to update all projects
   setInterval updateAllProjects, CONFIG.interval * 1000
   # initially trigger update of projects as previously created interval is
