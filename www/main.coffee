@@ -38,9 +38,13 @@ class HeaderView extends View
   template: Handlebars.compile """
   <h1>
     CircleBoard 0.0.1
-    <small></small>
+    <i class="refresh fa fa-refresh"></i>
+    <small>loading …</small>
   </h1>
   """
+
+  events:
+    'click i.refresh': 'triggerRefresh'
 
   lastUpdate: null
   lastUpdateInterval: null
@@ -50,13 +54,18 @@ class HeaderView extends View
     # automatically rerender element to update lastUpdate display
     @lastUpdateInterval = window.setInterval @render, 1000
 
+  triggerRefresh: ->
+    document.location.href = document.location.href
+
   showRefreshing: (text) ->
     @lastUpdate = new Date()
+    @$el.find('i').addClass('fa-spin')
     @$el.find('small').html(text)
     @
 
   render: =>
     super
+    @$el.find('i').removeClass('fa-spin')
     if @lastUpdate
       seconds = ((new Date()).getTime() - @lastUpdate.getTime()) / 1000
       seconds = Math.round(seconds)
@@ -68,6 +77,7 @@ class BuildView extends View
   template: Handlebars.compile $('#build-template').html()
   className: 'build'
   container: '#app > .builds'
+  tagName: 'li'
 
   initialize: ->
     super

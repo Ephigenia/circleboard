@@ -1,7 +1,7 @@
 // styles for the header
 
-@headerBackground: lighten(@bodyBackground, 10);
-@headerTextColor: lighten(@headerBackground, 60);
+@headerBackground: contrast(@bodyBackground, lighten(@bodyBackground, 20%), darken(@bodyBackground, 20%));
+@headerTextColor: contrast(@headerBackground, darken(@headerBackground, 40%), lighten(@headerBackground, 40%));
 
 #app > header {
 	h1 {
@@ -11,6 +11,11 @@
 			float: right;
 			color: darken(@headerTextColor, 20);
 		}
+	}
+	.refresh {
+		float: right;
+		margin-left: 5px;
+		line-height: 1.4em;
 	}
 	padding-left: @padding-base-horizontal;
 	padding-right: @padding-base-horizontal;
