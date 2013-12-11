@@ -3,7 +3,7 @@
 
 CONFIG =
   # interval bettween polling of circle ci status
-  interval: 20
+  interval: 15
   # insert circle ci status api key here or leave blank and set the environment
   # variable CIRCLE_CI_API_KEY which is then used in the server.coffee
   apiKey: ''
