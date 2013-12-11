@@ -77,10 +77,10 @@ class BuildView extends View
     classes = [
       @className
     ]
-    if model.get 'outcome'
-      classes.push "build-" + model.get 'outcome'
-    if model.get 'status' in ['scheduled', 'running']
-      classes.push "build-" + model.get 'status'
+    if model.get('outcome')
+      classes.push "build-" + model.get('outcome')
+    if model.get('status') in ['scheduled', 'running']
+      classes.push "build-" + model.get('status')
     @$el.attr 'class', classes.join ' '
 
   getTemplateData: ->
