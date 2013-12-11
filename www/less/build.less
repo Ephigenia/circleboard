@@ -22,17 +22,17 @@
 .build {
     @textColor: @buildTextColor;
     color: @textColor;
-    box-sizing: border-box;
     
     // add media-query to clear after some elements if screen gets to small
-    width: 33%;
+    width: 33.3%;
     height: 210px;
 
-    // padding: @padding-base-vertical @padding-base-horizontal;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    padding: @padding-base-vertical @padding-base-horizontal;
 
-    display: table;
+    display: inline-block;
     float: left;
-    position: relative;
 
     // animate the change of background color
     -webkit-transition: background-color 200ms ease-in;
@@ -41,7 +41,8 @@
     -ms-transition: background-color 200ms ease-in;
     transition: background-color 200ms ease-in;
 
-    h1, h2 {
+    h1, h2, time {
+        display: block;
         text-align: center;
     }
 
@@ -68,9 +69,9 @@
         }
     }
 
+    position: relative;
+
     time {
-        width: 100%;
-        text-align: center;
         position: absolute;
         bottom: 0.3em;
         font-size: small;

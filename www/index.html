@@ -15,6 +15,7 @@
         </div>
 
         <script id="build-template" type="text/x-handlebars-template">
+            <time datetime="">{{finished}}</time>
             <h1 class="project-name">{{name}}</h1>
             <h2>
                 <span class="branch">{{branch}}</span>
@@ -31,7 +32,6 @@
                     </author>
                 </blockquote>
             </div>
-            <time datetime="">{{finished}}</time>
         </script>
 
         <script src="/socket.io/socket.io.js"></script>
