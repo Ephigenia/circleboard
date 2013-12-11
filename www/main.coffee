@@ -91,6 +91,7 @@ class BuildView extends View
       classes.push "build-" + model.get('outcome')
     if model.get('status') in ['scheduled', 'running']
       classes.push "build-" + model.get('status')
+    
     @$el.attr 'class', classes.join ' '
 
   getTemplateData: ->
@@ -126,7 +127,7 @@ class IndexController
     uniqueId = build.getUniqueId()
     if @views[uniqueId]?
       @header.showRefreshing "updating #{build.get('name')} …"
-      @views[uniqueId].model.set data
+      @views[uniqueId].model.set data.build
     else
       @header.showRefreshing "adding #{build.get('name')} …"
       @views[uniqueId] = new BuildView
