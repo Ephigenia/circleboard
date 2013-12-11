@@ -19,17 +19,21 @@
     }
 }
 
+.builds {
+    max-width: 100%;
+    display: table;
+    float: left;
+}
 .build {
     @textColor: @buildTextColor;
     color: @textColor;
     
     // add media-query to clear after some elements if screen gets to small
     width: 33.3%;
-    height: 210px;
+    height: 220px;
 
     -moz-box-sizing: border-box;
     box-sizing: border-box; 
-    padding: @padding-base-vertical @padding-base-horizontal;
 
     display: inline-block;
     float: left;
@@ -41,7 +45,7 @@
     -ms-transition: background-color 200ms ease-in;
     transition: background-color 200ms ease-in;
 
-    h1, h2, time {
+    h1, h2 {
         display: block;
         text-align: center;
     }
@@ -49,6 +53,7 @@
     .commit {
         margin-top: 1em;
         > figure.avatar {
+            margin-left: 0.25em;
             width: 20%;
             float: left;
             > img {
@@ -58,7 +63,7 @@
             }
         }
         > blockquote {
-            width: 77%;
+            width: 75%;
             margin-left: 3%;
             float: right;
             > author {
@@ -72,6 +77,8 @@
     position: relative;
 
     time {
+        text-align: center;
+        width: 100%;
         position: absolute;
         bottom: 0.3em;
         font-size: small;

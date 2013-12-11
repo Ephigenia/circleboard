@@ -1,24 +1,23 @@
 // styles for the header
 
-@headerBackground: contrast(@bodyBackground, lighten(@bodyBackground, 20%), darken(@bodyBackground, 20%));
-@headerTextColor: contrast(@headerBackground, darken(@headerBackground, 40%), lighten(@headerBackground, 40%));
+@headerBackground: contrast(@bodyBackground, lighten(@bodyBackground, 10%), darken(@bodyBackground, 10%));
+@headerTextColor: contrast(@headerBackground, darken(@headerBackground, 70%), lighten(@headerBackground, 70%));
 
-#app > header {
-	h1 {
-		font-weight: 300;
-		> small {
-			line-height: 1.65em;
-			float: right;
-			color: darken(@headerTextColor, 20);
-		}
-	}
-	.refresh {
-		float: right;
-		margin-left: 5px;
-		line-height: 1.4em;
+.navbar {
+	line-height: 3em;
+	height: 3em;
+	h1.brand {
+		font-weight: 100;
 	}
 	padding-left: @padding-base-horizontal;
 	padding-right: @padding-base-horizontal;
 	color: @headerTextColor;
 	background: @headerBackground;
+
+	.navbar-left {
+		float: left;
+	}
+	.navbar-right {
+		float: right;
+	}
 }

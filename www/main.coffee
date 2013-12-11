@@ -32,15 +32,18 @@ class HeaderView extends View
 
   container: '#app'
   tagName: 'header'
+  className: 'navbar'
   containerMethod: 'prepend'
   autoRender: true
 
   template: Handlebars.compile """
-  <h1>
-    CircleBoard 0.0.1
-    <i class="refresh fa fa-refresh"></i>
+  <div class="navbar-left">
+    <h1 class="brand">CircleBoard 0.0.1</h1>
+  </div>
+  <div class="navbar-right">
     <small>loading …</small>
-  </h1>
+    <i class="refresh fa fa-refresh"></i>
+  </div>
   """
 
   events:
