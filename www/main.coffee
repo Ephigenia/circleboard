@@ -92,9 +92,8 @@ class BuildView extends View
     ]
     if model.get('outcome')
       classes.push "build-" + model.get('outcome')
-    if model.get('status') in ['scheduled', 'running']
+    if model.get('status') in ['scheduled', 'running', 'not_running']
       classes.push "build-" + model.get('status')
-    
     @$el.attr 'class', classes.join ' '
 
   getTemplateData: ->
