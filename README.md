@@ -1,12 +1,10 @@
-Circleboard
-
-Circleboard is a dashboard which displays the latest builds of projects automatically tested on [CircleCi](https://circleci.com/). It is designed to be leightweight and easy to install.
+Circleboard is a dashboard which displays the latest builds of projects automatically tested on [Circle CI](https://circleci.com/). It is designed to be leightweight and easy to install.
 
 It’s based on a server written in node which periodically requests the circleci status api using a status api key and sends the results to the frontend over a opened socket.io connection. The frontend which is written in pure javascript will then update the build status views.
 
 ## Demo
 
-There’s demo of the circle ci status board running on heroku: [http://circleboard.herokuapp.com/](http://circleboard.herokuapp.com/)
+There’s demo running on heroku: [http://circleboard.herokuapp.com/](http://circleboard.herokuapp.com/)
 
 <img src="https://raw.github.com/foobugs/circleboard/master/screenshot.jpg" alt="demo screenshot" />
 
@@ -18,13 +16,12 @@ After that you need to tell the server which projects you want to display on the
 
 After that you only need to run the server with `coffee server.coffee` and open the browser.
 
-Description in code:
+### Quick-Setup
 
 	npm install
 	cp config.dist.coffee config.coffee
 	$EDITOR config.coffee
 	coffee server.coffee
-	o localhost:50000
 
 ## Circle CI Api Key
 
