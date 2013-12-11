@@ -1,9 +1,19 @@
 class View extends Backbone.View
 
   isAttached: false
+  containerMethod: 'append'
+  autoRender: false
+
+  constructor: ->
+    super
+    if @autoRender
+      @render()
 
   getTemplateData: ->
-    return @model.toJSON()
+    data = {}
+    if @model
+      data = @model.toJSON()
+    return data
 
   render: ->
     templateData = @getTemplateData()
@@ -18,12 +28,46 @@ class View extends Backbone.View
       @isAttached = true
     @
 
+class HeaderView extends View
+
+  container: '#app'
+  tagName: 'header'
+  containerMethod: 'prepend'
+  autoRender: true
+
+  template: Handlebars.compile """
+  <h1>
+    CircleBoard 0.0.1
+    <small></small>
+  </h1>
+  """
+
+  lastUpdate: null
+  lastUpdateInterval: null
+
+  initialize: ->
+    super
+    # automatically rerender element to update lastUpdate display
+    @lastUpdateInterval = window.setInterval @render, 1000
+
+  showRefreshing: (text) ->
+    @lastUpdate = new Date()
+    @$el.find('small').html(text)
+    @
+
+  render: =>
+    super
+    if @lastUpdate
+      seconds = ((new Date()).getTime() - @lastUpdate.getTime()) / 1000
+      seconds = Math.round(seconds)
+      @$el.find('small').html("last update #{seconds}s ago")
+    @
+
 class BuildView extends View
 
   template: Handlebars.compile $('#build-template').html()
   className: 'build'
-  container: '#app'
-  containerMethod: 'append'
+  container: '#app > .builds'
 
   initialize: ->
     super
@@ -41,9 +85,10 @@ class BuildView extends View
 
   getTemplateData: ->
     data = super
+    # add author’s email hash for gravatar display
     data.authorEmailHash = CryptoJS.MD5 data.committer_email
+    # translate stop_time to relative date
     data.finished = moment(data.stop_time).fromNow()
-    data.subject = 'asdlkj'
     return data
 
   render: ->
@@ -58,18 +103,22 @@ class Build extends Backbone.Model
 class IndexController
 
   views: {}
+  header: null
 
   constructor: ->
     socket = io.connect 'http://'
     socket.on 'build', @updateBuild
+    @header = new HeaderView
 
   updateBuild: (data) =>
     build = new Build data.build
     build.set 'name', data.name
     uniqueId = build.getUniqueId()
     if @views[uniqueId]?
+      @header.showRefreshing "updating #{build.get('name')} …"
       @views[uniqueId].model.set data
     else
+      @header.showRefreshing "adding #{build.get('name')} …"
       @views[uniqueId] = new BuildView
         model: build
     @views[uniqueId].render()

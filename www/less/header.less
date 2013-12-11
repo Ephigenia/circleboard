@@ -1,0 +1,19 @@
+// styles for the header
+
+@headerBackground: lighten(@bodyBackground, 10);
+@headerTextColor: lighten(@headerBackground, 60);
+
+#app > header {
+	h1 {
+		font-weight: 300;
+		> small {
+			line-height: 1.75em;
+			float: right;
+			color: darken(@headerTextColor, 20);
+		}
+	}
+	padding-left: @padding-base-horizontal;
+	padding-right: @padding-base-horizontal;
+	color: @headerTextColor;
+	background: @headerBackground;
+}
