@@ -4,10 +4,17 @@
 @headerTextColor: contrast(@headerBackground, darken(@headerBackground, 70%), lighten(@headerBackground, 70%));
 
 .navbar {
-	line-height: 3em;
-	height: 3em;
+	line-height: 85px;
+	height: 85px;
 	h1.brand {
 		font-weight: 100;
+		small {
+			font-size: 50%;
+			line-height: 100%;
+			&, a {
+				color: darken(@headerTextColor, 20%);
+			} 
+		}
 	}
 	padding-left: @padding-base-horizontal;
 	padding-right: @padding-base-horizontal;

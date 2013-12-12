@@ -38,10 +38,13 @@ class HeaderView extends View
 
   template: Handlebars.compile """
   <div class="navbar-left">
-    <h1 class="brand">CircleBoard 0.0.1</h1>
+    <h1 class="brand">
+      CircleBoard 0.0.1
+      <small>by <a href="http://www.foobugs.com/?rel=circleboard">foobugs</a>
+    </h1>
   </div>
   <div class="navbar-right">
-    <small>loading …</small>
+    <small class="status">loading …</small>
     <i class="refresh fa fa-refresh"></i>
   </div>
   """
@@ -63,7 +66,7 @@ class HeaderView extends View
   showRefreshing: (text) ->
     @lastUpdate = new Date()
     @$el.find('i').addClass('fa-spin')
-    @$el.find('small').html(text)
+    @$el.find('.status').html(text)
     @
 
   render: =>
@@ -72,7 +75,7 @@ class HeaderView extends View
     if @lastUpdate
       seconds = ((new Date()).getTime() - @lastUpdate.getTime()) / 1000
       seconds = Math.round(seconds)
-      @$el.find('small').html("last update #{seconds}s ago")
+      @$el.find('.status').html("last update #{seconds}s ago")
     @
 
 class BuildView extends View
