@@ -87,7 +87,8 @@ class BuildView extends View
 
   initialize: ->
     super
-    @model.on 'change:result', @onChangeResult
+    @model.on 'change:outcome', @onChangeResult
+    @model.on 'change:status', @onChangeResult
 
   onChangeResult: (model) =>
     classes = [
@@ -98,6 +99,19 @@ class BuildView extends View
     if model.get('status') in ['scheduled', 'running', 'not_running']
       classes.push "build-" + model.get('status')
     @$el.attr 'class', classes.join ' '
+    if @isAttached
+      @animate 'pulse'
+    @
+
+  animate: (animationName) ->
+    @$el
+      .addClass('animated')
+      .addClass(animationName)
+    window.setTimeout () =>
+      @$el
+        .removeClass('animated')
+        .removeClass(animationName)
+    , 750
 
   getTemplateData: ->
     data = super
@@ -108,7 +122,15 @@ class BuildView extends View
     return data
 
   render: ->
-    @onChangeResult @model
+    # initially set build status in view
+    unless @isAttached
+      @onChangeResult @model
+    super
+
+  attach: ->
+    unless @isAttached
+      
+      @animate 'flipInX'
     super
 
 class Build extends Backbone.Model

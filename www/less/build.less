@@ -1,12 +1,5 @@
 @import "mixins/border-radius.less";
 
-@buildTextColor: #fff;
-@buildBackgroundColorSuccess: #7eab38;
-@buildBackgroundColorFailed: #900812;
-@buildBackgroundColorRunning: #fdc309;
-@buildBackgroundColorScheduled: #1785a2;
-@buildBackgroundColorCanceled: desaturate(@buildBackgroundColorFailed, 100%);
-
 // mixin for creating different build boxes with different base color sheme
 .buildBox(@textColor: #fff, @backgroundColor) {
     background-color: @backgroundColor;
@@ -37,22 +30,15 @@
     display: block;
     float: left;
 
-    // animate the change of background color
-    -webkit-transition: background-color 200ms ease-in;
-    -moz-transition: background-color 200ms ease-in;
-    -o-transition: background-color 200ms ease-in;
-    -ms-transition: background-color 200ms ease-in;
-    transition: background-color 200ms ease-in;
-
     h1, h2 {
         display: block;
         text-align: center;
     }
 
     .commit {
-        margin-top: 1em;
+        margin-top: 0.5em;
         > figure.avatar {
-            margin-left: 0.25em;
+            margin-left: 3%;
             width: 20%;
             float: left;
             > img {
@@ -62,9 +48,10 @@
         }
         > blockquote {
             width: 72%;
-            margin-left: 2%;
-            float: left;
+            margin-right: 3%;
+            float: right;
             > author {
+                text-align: right;
                 clear: left;
                 display: block;
                 font-weight: bold;
@@ -79,7 +66,7 @@
         width: 100%;
         position: absolute;
         bottom: 0.3em;
-        font-size: small;
+        font-size: @font-size-base * 0.60;
     }
 
     // different styles for different build status

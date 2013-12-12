@@ -1,0 +1,29 @@
+@bodyBackground: #111111;
+
+@padding-base-vertical: 0.5em;
+@padding-base-horizontal: 0.5em;
+
+// typography
+@line-height-base: 1.4285171429;
+@font-size-base: 26px;
+@font-weight-base: 400;
+// typography - headings
+@font-size-h1: @font-size-base * 2.25;
+@font-size-h2: @font-size-base * 1.5;
+@font-weight-h1: 500;
+@font-weight-h2: 400;
+
+// elements
+// --------
+
+// header
+@headerBackground: contrast(@bodyBackground, lighten(@bodyBackground, 10%), darken(@bodyBackground, 10%));
+@headerTextColor: contrast(@headerBackground, darken(@headerBackground, 70%), lighten(@headerBackground, 70%));
+
+// builds
+@buildTextColor: #fff;
+@buildBackgroundColorSuccess: #42c526;
+@buildBackgroundColorFailed: #f80b06;
+@buildBackgroundColorRunning: #f7b323;
+@buildBackgroundColorScheduled: #1d5bf4;
+@buildBackgroundColorCanceled: desaturate(@buildBackgroundColorFailed, 100%);
