@@ -1,3 +1,5 @@
+@import "mixins/border-radius.less";
+
 @buildTextColor: #fff;
 @buildBackgroundColorSuccess: #7eab38;
 @buildBackgroundColorFailed: #900812;
@@ -35,7 +37,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box; 
 
-    display: inline-block;
+    display: block;
     float: left;
 
     // animate the change of background color
@@ -58,14 +60,14 @@
             float: left;
             > img {
                 border: 2px solid @buildTextColor;
-                border-radius: 100em;
+                .border-radius(30em);
                 width: 90%;
             }
         }
         > blockquote {
-            width: 75%;
-            margin-left: 3%;
-            float: right;
+            width: 72%;
+            margin-left: 2%;
+            float: left;
             > author {
                 clear: left;
                 display: block;
