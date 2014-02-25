@@ -12,12 +12,20 @@ CONFIG =
   # project over the circle ci api
   projects: [
     {
-      name: 'Snoopet'
-      path: 'bevation/snoopet/tree/master'
+      name: 'FBN/FBN Master'
+      path: 'footbonaut/tree/master'
+    }
+    {
+      name: 'FBN/FBN Activity'
+      path: 'footbonaut/footbonaut'
+    }
+    {
+      name: 'Eph/FBN Activity'
+      path: 'Ephigenia/footbonaut'
     }
     {
       name: 'Snoopet'
-      path: 'bevation/snoopet/tree/development'
+      path: 'bevation/snoopet/tree/master'
     }
     {
       name: 'Snoopet Mobile'
@@ -26,14 +34,6 @@ CONFIG =
     {
       name: 'Snoopet Mobile'
       path: 'bevation/snoopet-mobile/tree/development'
-    }
-    {
-      name: 'Spritmap API'
-      path: 'foobugs/spritmap-api/tree/master'
-    }
-    {
-      name: 'Spritmap Client'
-      path: 'foobugs/spritmap-client/tree/master'
     }
     {
       name: "CircleBoard"
