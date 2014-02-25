@@ -16,6 +16,8 @@ module.exports = class CircleCiApi
       response.on 'data', (chunk) ->
         responseBody += chunk
       response.on 'end', ->
+        console.log 'OOOOTHER .----------------------------------'
+        console.log options.path, responseBody
         success(JSON.parse(responseBody))
     request.on 'error', (error) ->
       console.error "there has been an error: #{error.message}"

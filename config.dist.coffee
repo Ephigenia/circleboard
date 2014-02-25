@@ -12,19 +12,19 @@ CONFIG =
   # project over the circle ci api
   projects: [
     {
-      name: 'FBN/FBN Master'
-      path: 'footbonaut/tree/master'
+      name: 'FBN/FBN MST'
+      path: 'footbonaut/footbonaut/tree/master'
     }
     {
-      name: 'FBN/FBN Activity'
+      name: 'FBN/FBN ACT'
       path: 'footbonaut/footbonaut'
     }
     {
-      name: 'Eph/FBN Activity'
+      name: 'Eph/FBN ACT'
       path: 'Ephigenia/footbonaut'
     }
     {
-      name: 'Snoopet'
+      name: 'Snoopet Prod'
       path: 'bevation/snoopet/tree/master'
     }
     {
@@ -32,8 +32,16 @@ CONFIG =
       path: 'bevation/snoopet-mobile/tree/master'
     }
     {
-      name: 'Snoopet Mobile'
-      path: 'bevation/snoopet-mobile/tree/development'
+      name: 'Franklin ACT'
+      path: 'Ephigenia/franklin'
+    }
+    {
+      name: 'CryptoWL ACT'
+      path: 'foobugs/cryptocoinwatchlist'
+    }
+    {
+      name: 'GPS-Tracker ACT'
+      path: 'foobugs/gps-tracker'
     }
     {
       name: "CircleBoard"
