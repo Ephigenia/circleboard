@@ -29,7 +29,7 @@ unless !!CONFIG.projects or CONFIG.projects.length == 0
   process.exit(2)
 
 # express server configuration
-server.listen process.env.PORT || 5000
+server.listen process.env.PORT || 9000
 app.use(express.static("./www/"))
 app.get '/', (request, response) ->
   response.sendfile "./www/index.html"

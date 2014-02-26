@@ -136,7 +136,7 @@ class BuildView extends View
 class Build extends Backbone.Model
 
   getUniqueId: ->
-    return @get('name') + @get('branch')
+    return @get('name')
 
 class IndexController
 
