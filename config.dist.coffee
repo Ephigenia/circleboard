@@ -24,14 +24,6 @@ CONFIG =
       path: 'Ephigenia/footbonaut'
     }
     {
-      name: 'Snoopet Prod'
-      path: 'bevation/snoopet/tree/master'
-    }
-    {
-      name: 'Snoopet Mobile'
-      path: 'bevation/snoopet-mobile/tree/master'
-    }
-    {
       name: 'Franklin ACT'
       path: 'Ephigenia/franklin'
     }
