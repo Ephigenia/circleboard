@@ -144,7 +144,12 @@ class IndexController
   header: null
 
   constructor: ->
-    socket = io.connect 'http://'
+    socketOptions = 
+      secure: false
+    if window.location.protocol is 'https:'
+      socketOptions.secure = true
+    socketUrl = document.location.protocol + '//' + document.location.hostname
+    socket = io.connect socketUrl, socketOptions
     socket.on 'build', @updateBuild
     @header = new HeaderView
 
