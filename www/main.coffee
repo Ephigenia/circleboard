@@ -39,7 +39,7 @@ class HeaderView extends View
   template: Handlebars.compile """
   <div class="navbar-left">
     <h1 class="brand">
-      CircleBoard 0.0.1
+      CircleBoard 0.0.2
       <small>by <a href="http://www.foobugs.com/?rel=circleboard">foobugs</a>
     </h1>
   </div>
