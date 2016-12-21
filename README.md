@@ -1,3 +1,5 @@
+**Checkout Version 2 https://github.com/Ephigenia/circleboard2**
+
 Circleboard is a dashboard which displays the latest builds of projects automatically tested on [Circle CI](https://circleci.com/). It is designed to be leightweight and easy to install.
 
 It’s based on a server written in node which periodically requests the circleci status api using a status api key and sends the results to the frontend over a opened socket.io connection. The frontend which is written in pure javascript will then update the build status views.
